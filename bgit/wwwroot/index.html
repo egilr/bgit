@@ -5,7 +5,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>bgit</title>
-    <base href="/bgit/" />
+    <!--<base href="/bgit/" />-->
+
+    <script type="text/javascript">
+        if (window.location.host.startsWith('local')) document.write("<base href='/' />");
+        else document.write("<base href='/bgit/' />");
+    </script>
+
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
 </head>
